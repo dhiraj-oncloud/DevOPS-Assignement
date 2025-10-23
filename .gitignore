@@ -1,0 +1,15 @@
+# Ignore Terraform provider binaries
+terraform/.terraform/
+terraform/*.exe
+
+# Ignore Helm binaries
+k8s/helm-*
+k8s/*.exe
+
+# Ignore large logs or temp files
+*.log
+*.tar
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+# frontend-canary.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: frontend
+        version: v2
+    spec:
+      containers:
+      - name: frontend
+        image: 977098991025.dkr.ecr.us-east-1.amazonaws.com/my-frontend-repo:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: REACT_APP_VERSION
+          value: "v2-canary"

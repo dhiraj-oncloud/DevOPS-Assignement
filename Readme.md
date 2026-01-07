@@ -48,3 +48,6 @@ kubectl get pods,svc,ingress,hpa
 ##Access Application
 ALB URL: http://test.example.com----------(Frontend)
 API: http://test.example.com/api----------(Backend)
+
+<img width="1206" height="644" alt="EKS Custer Deployment" src="https://github.com/user-attachments/assets/00a6303a-b14c-435c-b4fd-f632cbc15d68" />
+
